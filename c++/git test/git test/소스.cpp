@@ -13,37 +13,3 @@ void main()
 		cin >> num;
 		cout << endl << "어른이면 y 학생이면 n을 입력해주세요 : ";
 		cin >> age;
-
-		switch (age)
-		{
-		case 'y':
-		case 'Y':
-			sum += p[d - 1] * num; cout << endl << "성인임으로 할인하지 않습니다. "; break;
-		case 'n':
-		case 'N':
-			sum += p[d - 1] * num * 0.5;
-			break;
-		default:
-			cout << endl << "올바른 문자를 입력하지 않았습니다.";
-			break;
-		}
-
-		cout << endl << "더 구매하시겠습니까?? y / n : ";
-		cin >> age;
-
-		switch (age)
-		{
-		case 'y':
-		case 'Y':
-			break;
-		case 'n':
-		case 'N':
-			a = 0;
-			break;
-		default:
-			cout << endl << "올바른 문자를 입력하지 않았습니다.";
-			break;
-		}
-	}
-	cout << "버스 요금은 " << sum << "원 입니다.";
-}
