@@ -1,9 +1,5 @@
-from tkinter import Y
-
-
-x = int(input('x값을 입력해주세요 : '))
-y = int(input('y값을 입력해주세요 : '))
-z = int(input('z값을 입력해주세요 : '))
-
-
+x,y,z = input('x , y , z 값을 입력해주세요. : ').split()
+x = int(x)
+y = int(y)
+z = int(z)
 print ('x + y * z = ', x + y * z)
